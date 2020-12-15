@@ -1,0 +1,12 @@
+kubectl apply -f - <<EOF
+apiVersion: operators.coreos.com/v1alpha1
+kind: Subscription
+metadata:
+  name: fy-subscription
+  namespace: olm-fy
+spec:
+  channel: alpha
+  name: istio-operator
+  source: fy-operator-catalog
+  sourceNamespace: olm-fy
+EOF
