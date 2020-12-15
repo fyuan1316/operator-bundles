@@ -100,7 +100,7 @@ spec:
                       fieldPath: metadata.name
                 - name: OPERATOR_NAME
                   value: istio-operator
-                image: docker.io/istio/operator:1.6.5
+                image: harbor-b.alauda.cn/aml/istio-operator:1.6.5
                 imagePullPolicy: IfNotPresent
                 name: istio-operator
                 resources:
@@ -147,7 +147,7 @@ spec:
     type: OwnNamespace
   - supported: true
     type: SingleNamespace
-  - supported: true
+  - supported: false
     type: MultiNamespace
   - supported: true
     type: AllNamespaces

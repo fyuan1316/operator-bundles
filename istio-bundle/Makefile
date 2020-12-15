@@ -27,4 +27,4 @@ push-index:
 	docker push $(INDEX_IMG)
 
 append-index:
-	opm index add --bundles $(BUNDLE_IMG) --tag $(INDEX_IMG) --from-index $(ALAUDA_INDEX_IMG) -c docker
+	opm index add --bundles $(BUNDLE_IMG) --tag $(INDEX_IMG) --from-index $(ALAUDA_INDEX_IMG) -c $(ORI)
