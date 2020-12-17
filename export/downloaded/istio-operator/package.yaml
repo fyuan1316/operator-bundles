@@ -1,0 +1,5 @@
+packageName: istio-operator
+channels:
+- name: alpha
+  currentCSV: istiooperator.v1.8.0
+defaultChannel: alpha
